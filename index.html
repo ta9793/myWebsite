@@ -5,6 +5,7 @@
     <title>Game Launcher</title>
     <style>
       body {
+        font-family: Arial, sans-serif;
         text-align: center;
         background-image: linear-gradient(
           rgb(12, 229, 255),
@@ -13,17 +14,28 @@
         );
         min-width: 100%;
         min-height: 100%;
-      }
-       body {
-        font-family: Arial, sans-serif;
+        margin: 0;
+        display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: #f4f4f4;
+        flex-direction: column; /* Center the content vertically */
       }
+
+      h1 {
+        font-family: verdana;
+        margin-bottom: 20px;
+      }
+
       a {
         text-decoration: none;
+      }
+
+      /* Container for the buttons */
+      .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Space between buttons */
       }
 
       /* Styling the button */
@@ -47,7 +59,8 @@
         justify-content: center;
         align-items: center;
       }
-       /* Glowing effect when hovering */
+
+      /* Glowing effect when hovering */
       .glow-button:hover {
         color: #fff;
         background-color: #007bff; /* Button color when hovered */
@@ -57,20 +70,24 @@
           0 0 30px #007bff,
           0 0 60px #007bff; /* Glowing effect */
       }
-       .glow-button:active {
+
+      .glow-button:active {
         background-color: #0056b3;
         transform: translateY(2px);
       }
     </style>
   </head>
   <body>
-    <h2><br /></h2>
-    <h1 style="font-family: verdana">Tito's Game Launcher</h1>
-    <a href="https://www.kour.org/">
-      <button class="glow-button">FPS Shooter</button>
-    </a>
-        <a href="https://mincraft.classic.net/">
-      <button class="glow-button">Block Game</button>
-    </a>
+    <h1>Tito's Game Launcher</h1>
+
+    <!-- Container for the buttons -->
+    <div class="button-container">
+      <a href="https://www.kour.org/">
+        <button class="glow-button">FPS Shooter</button>
+      </a>
+      <a href="https://mincraft.classic.net/">
+        <button class="glow-button">Block Game</button>
+      </a>
+    </div>
   </body>
 </html>
