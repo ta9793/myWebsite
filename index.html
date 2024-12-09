@@ -1,5 +1,8 @@
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Launcher</title>
     <style>
       body {
         text-align: center;
@@ -11,12 +14,63 @@
         min-width: 100%;
         min-height: 100%;
       }
+       body {
+        font-family: Arial, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      /* Styling the button */
+      .glow-button {
+        background-color: #fff;
+        color: #333;
+        border: 2px solid #ccc;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 8px;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+        transition: all 0.3s ease;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+       /* Glowing effect when hovering */
+      .glow-button:hover {
+        color: #fff;
+        background-color: #007bff; /* Button color when hovered */
+        border-color: #007bff;
+        box-shadow:
+          0 0 15px #007bff,
+          0 0 30px #007bff,
+          0 0 60px #007bff; /* Glowing effect */
+      }
+       .glow-button:active {
+        background-color: #0056b3;
+        transform: translateY(2px);
+      }
     </style>
   </head>
   <body>
     <h2><br /></h2>
     <h1 style="font-family: verdana">Tito's Game Launcher</h1>
-    <a href="https://www.kour.org/"><button style="width: 200px; height: 100px">FPS Shooter</button></a>
-        <a href="https://classic.minecraft.net/"><button style="width: 200px; height: 100px">Block Game<a</button></a>
+    <a href="https://www.kour.org/">
+      <button class="glow-button">FPS Shooter</button>
+    </a>
+        <a href="https://mincraft.classic.net/">
+      <button class="glow-button">Block Game</button>
+    </a>
   </body>
 </html>
