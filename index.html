@@ -12,19 +12,18 @@
           rgb(12, 12, 255),
           rgb(237, 12, 255)
         );
-        min-width: 100%;
-        min-height: 100%;
         margin: 0;
+        height: 100vh; /* Ensure the body takes full height */
         display: flex;
         justify-content: center; /* Horizontally center the content */
         align-items: flex-start; /* Align content to the top */
-        flex-direction: column;
+        flex-direction: column; /* Stack elements vertically */
+        padding-top: 40px; /* Add some space from the top */
       }
 
       h1 {
         font-family: verdana;
-        margin-top: 20px; /* Space between the top and title */
-        margin-bottom: 20px; /* Space between the title and buttons */
+        margin-bottom: 20px; /* Space between title and buttons */
       }
 
       a {
@@ -34,8 +33,7 @@
       /* Container for the buttons */
       .button-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: center; /* Horizontally center the buttons */
         gap: 20px; /* Space between buttons */
       }
 
