@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Launcher</title>
     <style>
+      /* Ensure the body takes the full height of the viewport */
       body {
         font-family: Arial, sans-serif;
         text-align: center;
@@ -13,17 +14,17 @@
           rgb(237, 12, 255)
         );
         margin: 0;
-        height: 100vh; /* Ensure the body takes full height */
+        height: 100vh; /* Make the body take up full height */
         display: flex;
-        justify-content: center; /* Horizontally center the content */
-        align-items: flex-start; /* Align content to the top */
-        flex-direction: column; /* Stack elements vertically */
-        padding-top: 40px; /* Add some space from the top */
+        flex-direction: column; /* Stack items vertically */
+        justify-content: flex-start; /* Align content to the top */
+        align-items: center; /* Horizontally center content */
+        padding-top: 40px; /* Give some space from the top */
       }
 
       h1 {
         font-family: verdana;
-        margin-bottom: 20px; /* Space between title and buttons */
+        margin-bottom: 20px; /* Add space between the header and the buttons */
       }
 
       a {
@@ -33,8 +34,8 @@
       /* Container for the buttons */
       .button-container {
         display: flex;
-        justify-content: center; /* Horizontally center the buttons */
-        gap: 20px; /* Space between buttons */
+        justify-content: center; /* Center the buttons horizontally */
+        gap: 20px; /* Space between the buttons */
       }
 
       /* Styling the button */
